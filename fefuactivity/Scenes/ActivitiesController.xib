@@ -10,7 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivitiesController" customModule="fefuactivity" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionActivitiesLabel" destination="3Oz-xB-HLE" id="8bq-8G-PXZ"/>
+                <outlet property="listOfActivities" destination="JUw-AW-8RS" id="B8R-V4-Ab5"/>
                 <outlet property="startButton" destination="4Gc-EK-PQB" id="3aE-uU-n3U"/>
+                <outlet property="titleActivitiesLabel" destination="w6n-UC-E76" id="2dP-Tq-y3F"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -64,6 +67,11 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JUw-AW-8RS">
+                    <rect key="frame" x="20" y="44" width="374" height="664"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -78,7 +86,7 @@
                 <constraint firstItem="3Oz-xB-HLE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hw5-01-m4n"/>
                 <constraint firstItem="3Oz-xB-HLE" firstAttribute="top" secondItem="w6n-UC-E76" secondAttribute="bottom" constant="21" id="vOy-eq-uHn"/>
             </constraints>
-            <point key="canvasLocation" x="57" y="51"/>
+            <point key="canvasLocation" x="56.521739130434788" y="50.892857142857139"/>
         </view>
     </objects>
     <resources>
