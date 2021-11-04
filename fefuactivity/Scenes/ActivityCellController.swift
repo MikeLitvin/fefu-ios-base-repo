@@ -7,18 +7,19 @@
 
 import UIKit
 
-struct ActivityDescription{
-    let name: String
-    let src: UIImage
-}
-
 struct ActivityModel {
     let distance: String
     let duration: String
-    let description: ActivityDescription
+    let descriptionName: String
+    let descriptionSrc: UIImage
     let deltaTime: String
     let started: String
     let finished: String
+}
+
+struct ActivitiesTableSection {
+    let date: String
+    let activities: [ActivityModel]
 }
 
 class ActivityCellController: UITableViewCell {
@@ -43,8 +44,8 @@ class ActivityCellController: UITableViewCell {
     func setCellStats(_ model: ActivityModel){
         distanceLabel.text = model.distance
         durationLabel.text = model.duration
-        descriptionImage.image = model.description.src
-        descriptionLabel.text = model.description.name
+        descriptionImage.image = model.descriptionSrc
+        descriptionLabel.text = model.descriptionName
         finishedLabel.text = model.deltaTime
     }
     
