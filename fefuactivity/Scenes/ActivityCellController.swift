@@ -35,6 +35,7 @@ class ActivityCellController: UITableViewCell {
         super.awakeFromNib()
         
         customCellView.layer.cornerRadius = 10
+        customCellView.layer.masksToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

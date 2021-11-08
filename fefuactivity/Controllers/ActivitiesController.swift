@@ -55,6 +55,10 @@ class ActivitiesController: UIViewController {
 extension ActivitiesController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let details = ActivityDetailsController(nibName: "ActivityDetailsController", bundle: nil)
+        details.activity = self.database[indexPath.section].activities[indexPath.row]
+        navigationController?.pushViewController(details, animated: true)
     }
 }
 
@@ -86,6 +90,7 @@ extension ActivitiesController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let sectionHeader = UILabel()
         sectionHeader.text = database[section].date
+        sectionHeader.font = .boldSystemFont(ofSize: 20)
         return sectionHeader
     }
     

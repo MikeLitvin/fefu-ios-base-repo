@@ -43,10 +43,8 @@
                         <constraint firstAttribute="height" constant="49" id="0MX-cs-apn"/>
                     </constraints>
                     <items>
-                        <tabBarItem title="Активности" image="circle" catalog="system" id="v7q-dI-2B1"/>
-                        <tabBarItem title="Профиль" image="circle" catalog="system" id="zOk-mf-e8N">
-                            <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                        </tabBarItem>
+                        <tabBarItem title="Активности" image="circle" catalog="system" id="g3R-h7-SY5"/>
+                        <tabBarItem title="Профиль" image="circle" catalog="system" id="s38-dP-aH3"/>
                     </items>
                 </tabBar>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gc-EK-PQB">
@@ -71,7 +69,7 @@
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JUw-AW-8RS">
-                    <rect key="frame" x="20" y="112" width="374" height="540"/>
+                    <rect key="frame" x="20" y="79" width="374" height="576"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
