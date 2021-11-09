@@ -34,6 +34,8 @@ class ActivityCellController: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        self.backgroundColor = .clear
+        self.selectionStyle = .none
         customCellView.layer.cornerRadius = 10
         customCellView.layer.masksToBounds = true
     }

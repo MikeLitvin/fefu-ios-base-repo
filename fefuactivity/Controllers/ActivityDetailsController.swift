@@ -31,6 +31,7 @@ class ActivityDetailsController: UIViewController {
         timeAgoSecondLabel.text = activity?.deltaTime
         
         self.title = activity?.descriptionName
+        navigationController?.navigationBar.prefersLargeTitles = false
         
     }
     

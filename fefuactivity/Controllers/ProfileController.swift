@@ -11,5 +11,8 @@ class ProfileController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Профиль"
+        navigationController?.navigationBar.prefersLargeTitles = false
     }
 }

@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivitiesController" customModule="fefuactivity" customModuleProvider="target">
             <connections>
+                <outlet property="activitiesView" destination="i5M-Pr-FkT" id="DzE-R2-l78"/>
                 <outlet property="descriptionActivitiesLabel" destination="3Oz-xB-HLE" id="8bq-8G-PXZ"/>
                 <outlet property="listOfActivities" destination="JUw-AW-8RS" id="B8R-V4-Ab5"/>
                 <outlet property="startButton" destination="4Gc-EK-PQB" id="3aE-uU-n3U"/>
@@ -23,21 +24,21 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время потренить" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6n-UC-E76">
-                    <rect key="frame" x="133" y="411.5" width="148" height="20.5"/>
+                    <rect key="frame" x="133" y="316" width="148" height="20.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Oz-xB-HLE">
-                    <rect key="frame" x="63.5" y="453" width="287.5" height="38.5"/>
+                    <rect key="frame" x="63.5" y="357.5" width="287.5" height="38.5"/>
                     <string key="text">Нажимай на кнопку ниже и начинаем
 трекать активность</string>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcx-dq-UuW">
-                    <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                <tabBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lcx-dq-UuW">
+                    <rect key="frame" x="0.0" y="820" width="414" height="49"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="49" id="0MX-cs-apn"/>
@@ -48,11 +49,9 @@
                     </items>
                 </tabBar>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gc-EK-PQB">
-                    <rect key="frame" x="51.5" y="738" width="311" height="55"/>
+                    <rect key="frame" x="32" y="737" width="350" height="55"/>
                     <color key="backgroundColor" red="0.080289937559999996" green="0.46022140979999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="311" id="LBC-Fq-vlk"/>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="311" id="OiD-Rt-nI2"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="cun-Md-TVo"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -69,7 +68,7 @@
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JUw-AW-8RS">
-                    <rect key="frame" x="20" y="79" width="374" height="576"/>
+                    <rect key="frame" x="20" y="135" width="374" height="557"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
@@ -77,15 +76,16 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="lcx-dq-UuW" firstAttribute="top" secondItem="4Gc-EK-PQB" secondAttribute="bottom" constant="21" id="0MB-sS-8lp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4Gc-EK-PQB" secondAttribute="trailing" constant="32" id="9mt-pQ-iJq"/>
                 <constraint firstItem="w6n-UC-E76" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AMN-sS-7N9"/>
                 <constraint firstItem="lcx-dq-UuW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EzA-Y3-vrz"/>
                 <constraint firstItem="lcx-dq-UuW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MEr-fl-fmT"/>
-                <constraint firstItem="4Gc-EK-PQB" firstAttribute="centerX" secondItem="lcx-dq-UuW" secondAttribute="centerX" id="UQg-Lo-ZBY"/>
                 <constraint firstItem="lcx-dq-UuW" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="WZm-9W-ICt"/>
-                <constraint firstItem="w6n-UC-E76" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="367.5" id="fEW-Ch-CcC"/>
-                <constraint firstItem="lcx-dq-UuW" firstAttribute="top" secondItem="4Gc-EK-PQB" secondAttribute="bottom" constant="20" id="h8V-qh-aRK"/>
+                <constraint firstItem="w6n-UC-E76" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="272" id="fEW-Ch-CcC"/>
                 <constraint firstItem="3Oz-xB-HLE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hw5-01-m4n"/>
                 <constraint firstItem="3Oz-xB-HLE" firstAttribute="top" secondItem="w6n-UC-E76" secondAttribute="bottom" constant="21" id="vOy-eq-uHn"/>
+                <constraint firstItem="4Gc-EK-PQB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="zOc-Xv-PMs"/>
             </constraints>
             <point key="canvasLocation" x="56.521739130434788" y="50.892857142857139"/>
         </view>

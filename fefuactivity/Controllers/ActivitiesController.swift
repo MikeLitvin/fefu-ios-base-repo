@@ -12,12 +12,12 @@ class ActivitiesController: UIViewController {
     let database: [ActivitiesTableSection] = {
         let yesterdayData: [ActivityModel] = [
             ActivityModel(
-                distance: "14.32 км", duration: "2 часа 46 минут", descriptionName: "Велосипед", descriptionSrc: UIImage(systemName: "bicycle.circle.fill") ?? UIImage(), deltaTime: "14 часов назад", started: "14:49", finished: "16:31"
+                distance: "14.32 км", duration: "1 час 42 минуты", descriptionName: "Велосипед", descriptionSrc: UIImage(systemName: "bicycle.circle.fill") ?? UIImage(), deltaTime: "14 часов назад", started: "14:49", finished: "16:31"
             ),
         ]
         let mayData: [ActivityModel] = [
             ActivityModel(
-                distance: "14.32 км", duration: "2 часа 46 минут", descriptionName: "Велосипед", descriptionSrc: UIImage(systemName: "bicycle.circle.fill") ?? UIImage(), deltaTime: "14 часов назад", started: "11:49", finished: "13:31"
+                distance: "14.32 км", duration: "1 час 42 минуты", descriptionName: "Велосипед", descriptionSrc: UIImage(systemName: "bicycle.circle.fill") ?? UIImage(), deltaTime: "14 часов назад", started: "11:49", finished: "13:31"
             ),
         ]
         return [
@@ -30,13 +30,18 @@ class ActivitiesController: UIViewController {
     @IBOutlet weak var titleActivitiesLabel: UILabel!
     @IBOutlet weak var descriptionActivitiesLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
-
+    @IBOutlet var activitiesView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Активности"
+        navigationController?.navigationBar.prefersLargeTitles = false
+        
+        activitiesView.backgroundColor = .systemGray6
         
         listOfActivities.isHidden = true
         listOfActivities.separatorStyle = .none
+        listOfActivities.backgroundColor = .systemGray6
         
         listOfActivities.delegate = self
         listOfActivities.dataSource = self
