@@ -24,9 +24,12 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trh-LK-P1O">
-                    <rect key="frame" x="31" y="694" width="353" height="95"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trh-LK-P1O">
+                    <rect key="frame" x="31" y="700" width="353" height="95"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="353" id="Fcc-dr-FDG"/>
+                        <constraint firstAttribute="height" constant="95" id="asx-v9-qVD"/>
+                    </constraints>
                     <string key="text">Нажимая на кнопку, вы соглашаетесь с политикой
 конфиденциальности и обработки персональных
 данных, а также принимаете пользовательское
@@ -36,21 +39,12 @@
                     <nil key="highlightedColor"/>
                     <string key="userLabel">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности и обработки персональных данных, а также принимаете пользовательское соглашение</string>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greyActivity" translatesAutoresizingMaskIntoConstraints="NO" id="z7M-Pr-PTR">
-                    <rect key="frame" x="175" y="809" width="65" height="42"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="cz5-cF-XmM">
-                    <rect key="frame" x="0.0" y="163" width="414" height="486"/>
+                    <rect key="frame" x="0.0" y="159" width="414" height="517"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-bv-Sn4">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="486"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
                         <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Логин" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VLn-T4-T5U" userLabel="login" customClass="registrationTextField" customModule="fefuactivity" customModuleProvider="target">
-                            <rect key="frame" x="19" y="8" width="375" height="55"/>
+                            <rect key="frame" x="20" y="6" width="375" height="60"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Circe-Regular" family="Circe" pointSize="18"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="username"/>
@@ -61,31 +55,31 @@
                             </userDefinedRuntimeAttributes>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s4z-EH-orJ" userLabel="password" customClass="passwordTextField" customModule="fefuactivity" customModuleProvider="target">
-                            <rect key="frame" x="19" y="89" width="375" height="55"/>
+                            <rect key="frame" x="20" y="97" width="375" height="54"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Circe-Regular" family="Circe" pointSize="18"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Повторите пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4c3-Jf-uiT" userLabel="confirm" customClass="passwordTextField" customModule="fefuactivity" customModuleProvider="target">
-                            <rect key="frame" x="19" y="174" width="375" height="55"/>
+                            <rect key="frame" x="20" y="185" width="375" height="60"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Circe-Regular" family="Circe" pointSize="18"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пол" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qKo-jf-Rh1" userLabel="sex" customClass="registrationTextField" customModule="fefuactivity" customModuleProvider="target">
-                            <rect key="frame" x="19" y="339" width="375" height="55"/>
+                            <rect key="frame" x="20" y="361" width="375" height="57"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Circe-Regular" family="Circe" pointSize="18"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя или никнейм" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wBJ-Fs-na9" userLabel="name" customClass="registrationTextField" customModule="fefuactivity" customModuleProvider="target">
-                            <rect key="frame" x="19" y="256" width="375" height="55"/>
+                            <rect key="frame" x="20" y="272" width="375" height="60"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Circe-Regular" family="Circe" pointSize="18"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="nickname"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="gb3-5T-95H">
-                            <rect key="frame" x="33" y="428" width="347" height="58"/>
+                            <rect key="frame" x="41" y="453" width="334" height="56"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.29411764709999999" green="0.035294117649999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="fontDescription" name="Circe-Regular" family="Circe" pointSize="16"/>
@@ -101,9 +95,18 @@
                     <viewLayoutGuide key="contentLayoutGuide" id="QP0-2L-tKF"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="iZk-eo-fE4"/>
                 </scrollView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greyActivity" translatesAutoresizingMaskIntoConstraints="NO" id="z7M-Pr-PTR">
+                    <rect key="frame" x="174" y="820" width="66" height="42"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Trh-LK-P1O" firstAttribute="centerX" secondItem="z7M-Pr-PTR" secondAttribute="centerX" id="FGq-Mb-OnU"/>
+                <constraint firstItem="z7M-Pr-PTR" firstAttribute="top" secondItem="Trh-LK-P1O" secondAttribute="bottom" constant="20" id="XaJ-t6-U83"/>
+                <constraint firstItem="Trh-LK-P1O" firstAttribute="top" secondItem="cz5-cF-XmM" secondAttribute="bottom" constant="45" id="aL1-zz-8Vf"/>
+                <constraint firstItem="Trh-LK-P1O" firstAttribute="centerX" secondItem="cz5-cF-XmM" secondAttribute="centerX" id="m3w-db-2ir"/>
+            </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </view>
     </objects>
