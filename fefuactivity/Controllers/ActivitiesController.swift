@@ -50,9 +50,12 @@ class ActivitiesController: UIViewController {
     }
     
     @IBAction func isStartButtonTouched(_ sender: Any) {
-        titleActivitiesLabel.isHidden = true
-        descriptionActivitiesLabel.isHidden = true
-        listOfActivities.isHidden = false
+//        titleActivitiesLabel.isHidden = true
+//        descriptionActivitiesLabel.isHidden = true
+//        listOfActivities.isHidden = false
+        
+        let mapView = MapController(nibName: "MapController", bundle: nil)
+        navigationController?.pushViewController(mapView, animated: true)
     }
     
 }
