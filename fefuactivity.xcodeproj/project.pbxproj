@@ -27,6 +27,8 @@
 		6346F1102719611F00B0EE5F /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6346F10E2719611E00B0EE5F /* LoginController.xib */; };
 		636B2F2027390B0D00D9416D /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636B2F1E27390B0D00D9416D /* ProfileController.swift */; };
 		636B2F2127390B0D00D9416D /* ProfileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636B2F1F27390B0D00D9416D /* ProfileController.xib */; };
+		637B7464274A25DB0094EF2E /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637B7462274A25DB0094EF2E /* MapController.swift */; };
+		637B7465274A25DB0094EF2E /* MapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637B7463274A25DB0094EF2E /* MapController.xib */; };
 		63AE863E270E95D5007862D6 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE863C270E95D5007862D6 /* RegistrationController.swift */; };
 		63AE863F270E95D5007862D6 /* RegistrationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63AE863D270E95D5007862D6 /* RegistrationController.xib */; };
 /* End PBXBuildFile section */
@@ -54,6 +56,8 @@
 		6346F10E2719611E00B0EE5F /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
 		636B2F1E27390B0D00D9416D /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		636B2F1F27390B0D00D9416D /* ProfileController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileController.xib; sourceTree = "<group>"; };
+		637B7462274A25DB0094EF2E /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		637B7463274A25DB0094EF2E /* MapController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapController.xib; sourceTree = "<group>"; };
 		63AE863C270E95D5007862D6 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		63AE863D270E95D5007862D6 /* RegistrationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +115,7 @@
 		632CB339271D99AB008BA402 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				637B7462274A25DB0094EF2E /* MapController.swift */,
 				636B2F1E27390B0D00D9416D /* ProfileController.swift */,
 				63274EC22733C5EC003BF58D /* ActivityDetailsController.swift */,
 				630341D1272D8B53009DFC57 /* ActivityCellController.swift */,
@@ -133,6 +138,7 @@
 				630341D2272D8B53009DFC57 /* ActivityCellController.xib */,
 				63274EC32733C5EC003BF58D /* ActivityDetailsController.xib */,
 				636B2F1F27390B0D00D9416D /* ProfileController.xib */,
+				637B7463274A25DB0094EF2E /* MapController.xib */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -204,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637B7465274A25DB0094EF2E /* MapController.xib in Resources */,
 				1DE4E5D1270A5CD0004A30CA /* LaunchScreen.storyboard in Resources */,
 				63445ED3272A395B00B8EFB3 /* ActivitiesController.xib in Resources */,
 				6346F1102719611F00B0EE5F /* LoginController.xib in Resources */,
@@ -225,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				632CB33F271DB74B008BA402 /* passwordTextField.swift in Sources */,
+				637B7464274A25DB0094EF2E /* MapController.swift in Sources */,
 				1DE4E5C9270A5CCE004A30CA /* ViewController.swift in Sources */,
 				63274EC72733C81C003BF58D /* commentsTextField.swift in Sources */,
 				1DE4E5C5270A5CCE004A30CA /* AppDelegate.swift in Sources */,
