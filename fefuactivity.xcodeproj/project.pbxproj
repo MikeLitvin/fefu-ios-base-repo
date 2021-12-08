@@ -25,6 +25,7 @@
 		63445ED3272A395B00B8EFB3 /* ActivitiesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63445ED1272A395B00B8EFB3 /* ActivitiesController.xib */; };
 		6346F10F2719611E00B0EE5F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346F10D2719611E00B0EE5F /* LoginController.swift */; };
 		6346F1102719611F00B0EE5F /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6346F10E2719611E00B0EE5F /* LoginController.xib */; };
+		6354222D27606EED00EEAB62 /* CoreDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6354222C27606EED00EEAB62 /* CoreDataContainer.swift */; };
 		636B2F2027390B0D00D9416D /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636B2F1E27390B0D00D9416D /* ProfileController.swift */; };
 		636B2F2127390B0D00D9416D /* ProfileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636B2F1F27390B0D00D9416D /* ProfileController.xib */; };
 		637B7464274A25DB0094EF2E /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637B7462274A25DB0094EF2E /* MapController.swift */; };
@@ -54,6 +55,7 @@
 		63445ED1272A395B00B8EFB3 /* ActivitiesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesController.xib; sourceTree = "<group>"; };
 		6346F10D2719611E00B0EE5F /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		6346F10E2719611E00B0EE5F /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
+		6354222C27606EED00EEAB62 /* CoreDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataContainer.swift; sourceTree = "<group>"; };
 		636B2F1E27390B0D00D9416D /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		636B2F1F27390B0D00D9416D /* ProfileController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileController.xib; sourceTree = "<group>"; };
 		637B7462274A25DB0094EF2E /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				1DE4E5CD270A5CD0004A30CA /* Assets.xcassets */,
 				1DE4E5D2270A5CD0004A30CA /* Info.plist */,
 				632C6DD2271803DD00103394 /* Circe-Regular.ttf */,
+				6354222C27606EED00EEAB62 /* CoreDataContainer.swift */,
 			);
 			path = fefuactivity;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				637B7464274A25DB0094EF2E /* MapController.swift in Sources */,
 				1DE4E5C9270A5CCE004A30CA /* ViewController.swift in Sources */,
 				63274EC72733C81C003BF58D /* commentsTextField.swift in Sources */,
+				6354222D27606EED00EEAB62 /* CoreDataContainer.swift in Sources */,
 				1DE4E5C5270A5CCE004A30CA /* AppDelegate.swift in Sources */,
 				63274EC42733C5EC003BF58D /* ActivityDetailsController.swift in Sources */,
 				630341D3272D8B53009DFC57 /* ActivityCellController.swift in Sources */,
