@@ -18,7 +18,6 @@
 		63274EC42733C5EC003BF58D /* ActivityDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63274EC22733C5EC003BF58D /* ActivityDetailsController.swift */; };
 		63274EC52733C5EC003BF58D /* ActivityDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63274EC32733C5EC003BF58D /* ActivityDetailsController.xib */; };
 		63274EC72733C81C003BF58D /* commentsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63274EC62733C81C003BF58D /* commentsTextField.swift */; };
-		632C6DD3271803DD00103394 /* Circe-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632C6DD2271803DD00103394 /* Circe-Regular.ttf */; };
 		632CB33D271DA533008BA402 /* registrationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CB33C271DA533008BA402 /* registrationTextField.swift */; };
 		632CB33F271DB74B008BA402 /* passwordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CB33E271DB74B008BA402 /* passwordTextField.swift */; };
 		63445ED2272A395B00B8EFB3 /* ActivitiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63445ED0272A395B00B8EFB3 /* ActivitiesController.swift */; };
@@ -32,6 +31,8 @@
 		637B7465274A25DB0094EF2E /* MapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637B7463274A25DB0094EF2E /* MapController.xib */; };
 		63AE863E270E95D5007862D6 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE863C270E95D5007862D6 /* RegistrationController.swift */; };
 		63AE863F270E95D5007862D6 /* RegistrationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63AE863D270E95D5007862D6 /* RegistrationController.xib */; };
+		63DB22692771B6BB007A7980 /* CollectionViewCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63DB22672771B6BB007A7980 /* CollectionViewCellController.xib */; };
+		63DB226B2771B9D6007A7980 /* CollectionViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB226A2771B9D6007A7980 /* CollectionViewCellController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +49,6 @@
 		63274EC22733C5EC003BF58D /* ActivityDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailsController.swift; sourceTree = "<group>"; };
 		63274EC32733C5EC003BF58D /* ActivityDetailsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityDetailsController.xib; sourceTree = "<group>"; };
 		63274EC62733C81C003BF58D /* commentsTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentsTextField.swift; sourceTree = "<group>"; };
-		632C6DD2271803DD00103394 /* Circe-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Circe-Regular.ttf"; path = "../../../../Downloads/Circe/Circe-Regular.ttf"; sourceTree = "<group>"; };
 		632CB33C271DA533008BA402 /* registrationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registrationTextField.swift; sourceTree = "<group>"; };
 		632CB33E271DB74B008BA402 /* passwordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = passwordTextField.swift; sourceTree = "<group>"; };
 		63445ED0272A395B00B8EFB3 /* ActivitiesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesController.swift; sourceTree = "<group>"; };
@@ -62,6 +62,8 @@
 		637B7463274A25DB0094EF2E /* MapController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapController.xib; sourceTree = "<group>"; };
 		63AE863C270E95D5007862D6 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		63AE863D270E95D5007862D6 /* RegistrationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationController.xib; sourceTree = "<group>"; };
+		63DB22672771B6BB007A7980 /* CollectionViewCellController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCellController.xib; sourceTree = "<group>"; };
+		63DB226A2771B9D6007A7980 /* CollectionViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,6 @@
 				632CB338271D998A008BA402 /* Delegates */,
 				1DE4E5CD270A5CD0004A30CA /* Assets.xcassets */,
 				1DE4E5D2270A5CD0004A30CA /* Info.plist */,
-				632C6DD2271803DD00103394 /* Circe-Regular.ttf */,
 				6354222C27606EED00EEAB62 /* CoreDataContainer.swift */,
 			);
 			path = fefuactivity;
@@ -126,6 +127,7 @@
 				6346F10D2719611E00B0EE5F /* LoginController.swift */,
 				63AE863C270E95D5007862D6 /* RegistrationController.swift */,
 				63445ED0272A395B00B8EFB3 /* ActivitiesController.swift */,
+				63DB226A2771B9D6007A7980 /* CollectionViewCellController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -142,6 +144,7 @@
 				63274EC32733C5EC003BF58D /* ActivityDetailsController.xib */,
 				636B2F1F27390B0D00D9416D /* ProfileController.xib */,
 				637B7463274A25DB0094EF2E /* MapController.xib */,
+				63DB22672771B6BB007A7980 /* CollectionViewCellController.xib */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -219,10 +222,10 @@
 				6346F1102719611F00B0EE5F /* LoginController.xib in Resources */,
 				1DE4E5CE270A5CD0004A30CA /* Assets.xcassets in Resources */,
 				63274EC52733C5EC003BF58D /* ActivityDetailsController.xib in Resources */,
+				63DB22692771B6BB007A7980 /* CollectionViewCellController.xib in Resources */,
 				636B2F2127390B0D00D9416D /* ProfileController.xib in Resources */,
 				630341D4272D8B53009DFC57 /* ActivityCellController.xib in Resources */,
 				63AE863F270E95D5007862D6 /* RegistrationController.xib in Resources */,
-				632C6DD3271803DD00103394 /* Circe-Regular.ttf in Resources */,
 				1DE4E5CC270A5CCE004A30CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				632CB33F271DB74B008BA402 /* passwordTextField.swift in Sources */,
+				63DB226B2771B9D6007A7980 /* CollectionViewCellController.swift in Sources */,
 				637B7464274A25DB0094EF2E /* MapController.swift in Sources */,
 				1DE4E5C9270A5CCE004A30CA /* ViewController.swift in Sources */,
 				63274EC72733C81C003BF58D /* commentsTextField.swift in Sources */,

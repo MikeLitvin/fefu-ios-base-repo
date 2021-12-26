@@ -9,8 +9,19 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class MapController: UIViewController {
+private let image = UIImage(named: "cellViewImage")
+
+private let cellTypeData: [collectionCell] =
+[
+    collectionCell(name: "Велосипед", img: image ?? UIImage(), type: "На велике"),
+    collectionCell(name: "Бег", img: image ?? UIImage(), type: "Бежим")
+]
+
+private var selectedType: String?
+
+class MapController: UIViewController{
     
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var mapView: MKMapView!
     
     let locationManager: CLLocationManager = {
@@ -44,6 +55,9 @@ class MapController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
         self.title = "Новая активность"
         navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "Назад", style: .plain, target: nil, action: nil)
         
@@ -53,6 +67,10 @@ class MapController: UIViewController {
         
         mapView.showsUserLocation = true
         mapView.delegate = self
+        
+        let nib = UINib(nibName: "CollectionViewCellController", bundle: nil)
+        
+        collectionView.register(nib, forCellWithReuseIdentifier: "CollectionViewCellController")
     }
 }
 
@@ -89,5 +107,39 @@ extension MapController: MKMapViewDelegate {
             return view
         }
         return nil
+    }
+}
+
+extension MapController: UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCellController{
+            cell.customCell.layer.borderWidth = 3
+
+            selectedType = cell.cellType
+        }
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCellController {
+                    cell.customCell.layer.borderWidth = 0
+                }
+    }
+}
+
+extension MapController: UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return cellTypeData.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = cellTypeData[indexPath.row]
+        let dequeuedCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCellController", for: indexPath)
+        
+        guard let upcastedCell = dequeuedCell as? CollectionViewCellController else{
+            return UICollectionViewCell()
+        }
+        upcastedCell.setCellStats(cell)
+        
+        return upcastedCell
     }
 }

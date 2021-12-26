@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapController" customModule="fefuactivity" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="ZWd-ir-1vA" id="qz5-io-lJm"/>
                 <outlet property="mapView" destination="Oas-7G-AEH" id="Y67-yc-XNZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,29 +23,70 @@
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Oas-7G-AEH">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                 </mapView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iet-Oz-0f0">
+                    <rect key="frame" x="0.0" y="574" width="414" height="288"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Погнали? :)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7MM-mv-th8">
+                            <rect key="frame" x="140" y="30" width="134" height="26.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ZWd-ir-1vA">
+                            <rect key="frame" x="16" y="86.5" width="382" height="107.5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TBb-wf-ZQM">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uc2-FI-8Bd">
+                            <rect key="frame" x="16" y="224" width="382" height="33"/>
+                            <color key="backgroundColor" red="0.080289937559999996" green="0.46022140979999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="PAA-bD-dtL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Старт">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="ZWd-ir-1vA" firstAttribute="leading" secondItem="iet-Oz-0f0" secondAttribute="leading" constant="16" id="DYP-X8-ald"/>
+                        <constraint firstAttribute="trailing" secondItem="uc2-FI-8Bd" secondAttribute="trailing" constant="16" id="KaP-RB-IfD"/>
+                        <constraint firstItem="uc2-FI-8Bd" firstAttribute="leading" secondItem="iet-Oz-0f0" secondAttribute="leading" constant="16" id="Xgw-mk-F5H"/>
+                        <constraint firstAttribute="trailing" secondItem="7MM-mv-th8" secondAttribute="trailing" constant="140" id="b7k-cA-xt2"/>
+                        <constraint firstItem="ZWd-ir-1vA" firstAttribute="top" secondItem="7MM-mv-th8" secondAttribute="bottom" constant="30" id="d6m-Vz-duU"/>
+                        <constraint firstItem="7MM-mv-th8" firstAttribute="top" secondItem="iet-Oz-0f0" secondAttribute="top" constant="30" id="hnH-Mp-Kwi"/>
+                        <constraint firstAttribute="trailing" secondItem="ZWd-ir-1vA" secondAttribute="trailing" constant="16" id="pgS-GX-m3Y"/>
+                        <constraint firstItem="7MM-mv-th8" firstAttribute="leading" secondItem="iet-Oz-0f0" secondAttribute="leading" constant="140" id="t00-6V-Msp"/>
+                        <constraint firstItem="uc2-FI-8Bd" firstAttribute="top" secondItem="ZWd-ir-1vA" secondAttribute="bottom" constant="30" id="t5M-qm-IRq"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Oas-7G-AEH" secondAttribute="bottom" id="YZh-F9-DId"/>
-                <constraint firstItem="Oas-7G-AEH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="arM-ZE-Vcx"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Oas-7G-AEH" secondAttribute="trailing" id="oib-Xp-Ufc"/>
-                <constraint firstItem="Oas-7G-AEH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xDB-Tk-yOv"/>
+                <constraint firstItem="iet-Oz-0f0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2lk-2h-CVN"/>
+                <constraint firstItem="iet-Oz-0f0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="530" id="QkG-GG-bxh"/>
+                <constraint firstItem="Oas-7G-AEH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Y1R-g5-8Ce"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Oas-7G-AEH" secondAttribute="trailing" id="YmZ-zG-wFo"/>
+                <constraint firstItem="Oas-7G-AEH" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="cEx-Qd-d8L"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iet-Oz-0f0" secondAttribute="trailing" id="iCA-Ke-KFk"/>
+                <constraint firstItem="iet-Oz-0f0" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="kCn-ob-hkZ"/>
+                <constraint firstItem="Oas-7G-AEH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tTv-T6-5Dt"/>
             </constraints>
-            <point key="canvasLocation" x="-13" y="87"/>
+            <point key="canvasLocation" x="-13.043478260869566" y="86.383928571428569"/>
         </view>
-        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" id="Cz5-fn-qqT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Oad-pd-XUC">
-                <size key="itemSize" width="128" height="128"/>
-                <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-            </collectionViewFlowLayout>
-            <point key="canvasLocation" x="-312" y="733"/>
-        </collectionView>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
