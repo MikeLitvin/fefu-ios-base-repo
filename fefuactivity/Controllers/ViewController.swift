@@ -9,19 +9,15 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         navigationController?.navigationBar.prefersLargeTitles = true
-        
-//        let activities = ActivitiesController(nibName: "ActivitiesController", bundle: nil)
-//        present(activities, animated: true, completion: nil)
     }
     
     @IBAction func regButtonTap(_ sender: Any) {
         let regView = RegistrationController(nibName:"RegistrationController", bundle: nil)
-        
         navigationController?.pushViewController(regView, animated: true)
     }
     
     @IBAction func loginButtonTap(_ sender: Any) {
-        let logView = ActivitiesController(nibName: "ActivitiesController", bundle: nil)
+        let logView = LoginController(nibName: "LoginController", bundle: nil)
         navigationController?.pushViewController(logView, animated: true)
     }
     
