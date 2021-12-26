@@ -7,8 +7,8 @@
 
 import CoreData
 
-class FEFUCoreDataContainer {
-    static let instance = FEFUCoreDataContainer()
+class CoreDataContainer {
+    static let instance = CoreDataContainer()
     
     private init() { }
     private static let persistentContainerName = "SaveActivity"

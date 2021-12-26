@@ -15,6 +15,7 @@
 		1DE4E5D1270A5CD0004A30CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE4E5CF270A5CD0004A30CA /* LaunchScreen.storyboard */; };
 		630341D3272D8B53009DFC57 /* ActivityCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630341D1272D8B53009DFC57 /* ActivityCellController.swift */; };
 		630341D4272D8B53009DFC57 /* ActivityCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630341D2272D8B53009DFC57 /* ActivityCellController.xib */; };
+		631CAAE82778298C007C16BE /* activitymodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 631CAAE62778298C007C16BE /* activitymodel.xcdatamodeld */; };
 		63274EC42733C5EC003BF58D /* ActivityDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63274EC22733C5EC003BF58D /* ActivityDetailsController.swift */; };
 		63274EC52733C5EC003BF58D /* ActivityDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63274EC32733C5EC003BF58D /* ActivityDetailsController.xib */; };
 		63274EC72733C81C003BF58D /* commentsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63274EC62733C81C003BF58D /* commentsTextField.swift */; };
@@ -46,6 +47,7 @@
 		1DE4E5D2270A5CD0004A30CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		630341D1272D8B53009DFC57 /* ActivityCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityCellController.swift; path = ../Scenes/ActivityCellController.swift; sourceTree = "<group>"; };
 		630341D2272D8B53009DFC57 /* ActivityCellController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityCellController.xib; sourceTree = "<group>"; };
+		631CAAE72778298C007C16BE /* activitymodel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = activitymodel.xcdatamodel; sourceTree = "<group>"; };
 		63274EC22733C5EC003BF58D /* ActivityDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailsController.swift; sourceTree = "<group>"; };
 		63274EC32733C5EC003BF58D /* ActivityDetailsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityDetailsController.xib; sourceTree = "<group>"; };
 		63274EC62733C81C003BF58D /* commentsTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentsTextField.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				1DE4E5CD270A5CD0004A30CA /* Assets.xcassets */,
 				1DE4E5D2270A5CD0004A30CA /* Info.plist */,
 				6354222C27606EED00EEAB62 /* CoreDataContainer.swift */,
+				631CAAE62778298C007C16BE /* activitymodel.xcdatamodeld */,
 			);
 			path = fefuactivity;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				6354222D27606EED00EEAB62 /* CoreDataContainer.swift in Sources */,
 				1DE4E5C5270A5CCE004A30CA /* AppDelegate.swift in Sources */,
 				63274EC42733C5EC003BF58D /* ActivityDetailsController.swift in Sources */,
+				631CAAE82778298C007C16BE /* activitymodel.xcdatamodeld in Sources */,
 				630341D3272D8B53009DFC57 /* ActivityCellController.swift in Sources */,
 				632CB33D271DA533008BA402 /* registrationTextField.swift in Sources */,
 				63AE863E270E95D5007862D6 /* RegistrationController.swift in Sources */,
@@ -455,6 +459,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		631CAAE62778298C007C16BE /* activitymodel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				631CAAE72778298C007C16BE /* activitymodel.xcdatamodel */,
+			);
+			currentVersion = 631CAAE72778298C007C16BE /* activitymodel.xcdatamodel */;
+			path = activitymodel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1DE4E5B9270A5CCE004A30CA /* Project object */;
 }
