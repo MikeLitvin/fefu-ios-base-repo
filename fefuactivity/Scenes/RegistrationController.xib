@@ -15,7 +15,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationController" customModule="fefuactivity" customModuleProvider="target">
             <connections>
+                <outlet property="confirmPasswordField" destination="4c3-Jf-uiT" id="wo1-Ou-oV2"/>
                 <outlet property="genderField" destination="qKo-jf-Rh1" id="Tq5-2h-Gvf"/>
+                <outlet property="loginField" destination="VLn-T4-T5U" id="TF5-e3-1e4"/>
+                <outlet property="nameField" destination="wBJ-Fs-na9" id="qRz-AB-WwW"/>
+                <outlet property="passwordField" destination="s4z-EH-orJ" id="n9Y-Jj-Bbd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -90,6 +94,9 @@
                                     <integer key="value" value="12"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="continueButtonTapped:" destination="-1" eventType="touchUpInside" id="FfI-Xz-DkC"/>
+                            </connections>
                         </button>
                     </subviews>
                     <viewLayoutGuide key="contentLayoutGuide" id="QP0-2L-tKF"/>
